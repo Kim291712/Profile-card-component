@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Dark_cyan);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-position: top -450px left -150px, bottom -550px right -150px;
+    background-repeat: no-repeat;
+
+    font-family: "Kumbh Sans", system-ui;
+}
+
+/*card container*/
+#profile-card {
+    width: 22rem;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+/*banner*/
+.profile-header {
+    background: url("./images/bg-pattern-card.svg");
+    width: 100%;
+    height: 8.5rem;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+/*avatar*/
+.profile-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%)
+}
+
+/*info*/
+.profile-info {
+    margin-top: 4.5rem;
+    padding-bottom: 1.5rem;  
+    border-bottom: 0.2px solid var(--Dark_gray);
+}
+
+.profile-info .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Very_dark_blue)
+}
+.profile-info .age {
+    margin-left: 0.4rem;
+
+    color: var(--Dark_grayish_blue);
+    font-weight: 400;
+}
+
+.profile-info .location {
+    margin-top: 0.4rem;
+
+    color: var(--Dark_grayish_blue);
+    font-size: 14px;
+}
+
+/*stats*/
+.profile-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+}
+.stats p:first-child {
+    margin-bottom: 0.2rem;
+
+    color: var(--Very_dark_blue);
+    font-size: 18px;
+    font-weight: bold;
+}
+.stats p:last-child {
+    color: var(--Dark_grayish_blue);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+}
+
+
+
