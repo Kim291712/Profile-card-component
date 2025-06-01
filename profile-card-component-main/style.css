@@ -27,7 +27,7 @@ body {
 
 /*card container*/
 #profile-card {
-    max-width: 22rem;
+    max-width: 360px;
     width: 100%;
     border-radius: 15px;
     background: white;
@@ -105,7 +105,7 @@ body {
 
 @media screen and (max-width: 430px) {
 #profile-card {
-    width: 90%;
+    width: 85%;
 }
 }
 
